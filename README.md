@@ -24,9 +24,7 @@ It allows users to raise support tickets, assign them to agents, and track their
 
 ---
 
-👨‍💻 Built By
-Banjesh Pandey
-Sumit Soni
+
 
 
 
@@ -40,15 +38,30 @@ Sumit Soni
 
 ---
 
+---
+
+## 👨‍💻 Built By
+
+- **Banjesh Pandey**
+- **Sumit Soni**
+
+---
+
+## 🗒️ Note
+
+This module covers **Problem 1** of the *Odoo x CGC Hackathon 2025*, focused on building a functional support ticket system within Odoo.
+
+Codebase is modular and can be extended with voting, replies, and dashboard features.
+
+
 ## 🔧 How to Install (Dev Mode)
 
 ```bash
 # Clone the repo into your custom_addons directory
 git clone https://github.com/banjeshp07/Oddo-QuickDesk.git
-
 # Start Odoo server
 python odoo-bin -c odoo.conf
+# Open browser → http://localhost:8080
 
-# Open browser → http://localhost:8069
 # Enable Developer Mode → Update App List
 # Search "QuickDesk" → Install
