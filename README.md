@@ -24,6 +24,12 @@ It allows users to raise support tickets, assign them to agents, and track their
 
 ---
 
+👨‍💻 Built By
+Banjesh Pandey
+Sumit Soni
+
+
+
 ## 📸 Features in Action
 
 - Go to *QuickDesk → Tickets*
