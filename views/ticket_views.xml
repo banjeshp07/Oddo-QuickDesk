@@ -1,0 +1,50 @@
+<odoo>
+  <!-- FORM VIEW -->
+  <record id="view_ticket_form" model="ir.ui.view">
+    <field name="name">quickdesk.ticket.form</field>
+    <field name="model">quickdesk.ticket</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <field name="name"/>
+            <field name="description"/>
+            <field name="category_id"/>
+            <field name="attachment"/>
+            <field name="status"/>
+            <field name="upvotes" readonly="1"/>
+            <field name="downvotes" readonly="1"/>
+            <button name="action_upvote" type="object" string="👍 Upvote"/>
+            <button name="action_downvote" type="object" string="👎 Downvote"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <!-- TREE VIEW -->
+  <record id="view_ticket_tree" model="ir.ui.view">
+    <field name="name">quickdesk.ticket.tree</field>
+    <field name="model">quickdesk.ticket</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name"/>
+        <field name="category_id"/>
+        <field name="status"/>
+        <field name="upvotes"/>
+        <field name="downvotes"/>
+      </tree>
+    </field>
+  </record>
+
+  <!-- ACTION -->
+  <record id="action_ticket" model="ir.actions.act_window">
+    <field name="name">Tickets</field>
+    <field name="res_model">quickdesk.ticket</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <!-- MENU -->
+  <menuitem id="menu_quickdesk_root" name="QuickDesk"/>
+  <menuitem id="menu_quickdesk_tickets" name="Tickets" parent="menu_quickdesk_root" action="action_ticket"/>
+</odoo>
